@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Project Tracker!</title>
 </head>
-<header>
+<header class="p-5 text-center">
     <h1>Welcome to Project Tracker</h1>
+    <h2>Current Time: <span id="time-display"></span></h2>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Add Projects
       </button>
@@ -61,6 +62,7 @@
             <div class="col-3" id="due date"></div>
         </div>
     </div>
+    <script src="path/to/dayjs/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
