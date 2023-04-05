@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Project Tracker!</title>
+</head>
+<header>
+    <h1>Welcome to Project Tracker</h1>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add Projects
+      </button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Project Tracker</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+            <label for="name">Name of Project:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="date">Date Project is Due:</label><br>
+            <input type="text" id="lname" name="lname">
+          </form>
+        <div class="modal-body">
+          <label for="types of project" id="types">
+            <select type="types" id="types">
+                <optgroup label="Languages">
+                    <option value="HTML">HTML></option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </optgroup>
+            </select>
+          </label>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</header>
+<body>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Project Tracker</h5>
+          <p class="card-text">Click on the "Add Projects" button to add projects to your list.</p>
+        </div>
+      </div>
+    <div class="container text-center">
+        <div class="row justify-content-start">
+            <div class="col-1" id="project name"></div>
+            <div class="col-2" id="project type"></div>
+            <div class="col-3" id="due date"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
